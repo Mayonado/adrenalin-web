@@ -98,6 +98,8 @@ module.exports = {
       "gradient-to-l": "linear-gradient(to left, var(--tw-gradient-stops))",
       "gradient-to-tl":
         "linear-gradient(to top left, var(--tw-gradient-stops))",
+      bannerImg: "url('assets/images/banner-2.png')",
+      "mobile-banner": "url('assets/images/banner-mobile.png')",
     },
     backgroundOpacity: (theme) => theme("opacity"),
     backgroundPosition: {
@@ -558,6 +560,8 @@ module.exports = {
       0: "0px",
       full: "100%",
       screen: "100vh",
+      "desktop-banner": "460px",
+      "mobile-banner": "292px",
     },
     minWidth: {
       0: "0px",
@@ -1032,6 +1036,11 @@ module.exports = {
     width: ["responsive"],
     wordBreak: ["responsive"],
     zIndex: ["responsive", "focus-within", "focus"],
+    extend: {
+      borderRadius: ["first", "last"],
+      borderStyle: ["first", "last"],
+      borderWidth: ["first", "last"],
+    },
   },
   plugins: [],
 };

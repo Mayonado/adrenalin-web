@@ -1,11 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const FeedItem = ({ mountain, mountainIndex, bgImages }) => {
+const FeedItem = ({ mountain }) => {
   return (
     <div className="w-full" key={mountain.id}>
       <div className="my-1">
-        <img src={bgImages[mountainIndex]} className="w-full" />
+        <img src={mountain.img} className="w-full" />
       </div>
       <div className="my-1">
         <div className="font-bold text-lg my-2">{mountain.title}</div>
@@ -18,7 +18,6 @@ const FeedItem = ({ mountain, mountainIndex, bgImages }) => {
 FeedItem.propTypes = {
   mountain: PropTypes.object,
   mountainIndex: PropTypes.number,
-  bgImages: PropTypes.array,
 };
 
 export default FeedItem;

@@ -3,23 +3,42 @@ import PropTypes from "prop-types";
 import { classNames } from "utils";
 
 const Pagination = ({ activePage, onChangePage, totalRows }) => {
-  const pages = Math.ceil(totalRows / 10);
+  const pages = Math.ceil(totalRows / 10); //
   const pagesArray = Array.from(Array(pages).keys());
+
+  const paginationClasses = (page) =>
+    classNames(
+      "flex justify-center border-t border-r border-b px-7 py-4 text-sm first:rounded-l last:rounded-r first:border-l",
+      activePage === page
+        ? "text-primary border-primary border-r"
+        : "border-textGray"
+    );
   return (
     <div className="flex flex-row">
-      {pagesArray.map((page) => (
-        <button
-          className={classNames(
-            "flex justify-center border border-primary px-4 py-2 text-sm",
-            activePage === page + 1
-              ? "text-primary border-primary"
-              : "border-textGray"
-          )}
-          key={page}
-        >
-          {page + 1}
-        </button>
-      ))}
+      {pagesArray.map((pageIndex) => {
+        const page = pageIndex + 1;
+        if (pageIndex === 4) {
+          return (
+            <button className={paginationClasses(page)} key={page}>
+              ...
+            </button>
+          );
+        }
+        if (pageIndex < 3) {
+          return (
+            <button className={paginationClasses(page)} key={page}>
+              {page}
+            </button>
+          );
+        }
+        if (pagesArray.length === page) {
+          return (
+            <button className={paginationClasses(page)} key={page}>
+              {page}
+            </button>
+          );
+        }
+      })}
     </div>
   );
 };
