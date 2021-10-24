@@ -10,7 +10,7 @@ const Footer = () => {
       <div className="flex w-2/6 text-white justify-end">
         Front-end developer test page - October 2021
       </div> */}
-      <div className="flex flex-col sm:flex-row sm:container px-8 sm:px-8 md:px-8 lg:px-8 xl:px-0">
+      <div className="flex flex-col sm:flex-row sm:container px-4 sm:px-4 md:px-4 lg:px-4 xl:px-0">
         <div className="w-full sm:w-6/12 py-1">
           <img src={whiteLogo} alt="White Logo" />
         </div>
