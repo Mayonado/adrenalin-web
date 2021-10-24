@@ -8,7 +8,7 @@ const Pagination = ({ activePage, totalRows }) => {
 
   const paginationClasses = (page) =>
     classNames(
-      "flex justify-center border-t border-r border-b px-7 py-4 text-sm first:rounded-l last:rounded-r first:border-l",
+      "flex justify-center border-t border-r border-b px-6 py-4 text-sm first:rounded-l last:rounded-r first:border-l",
       activePage === page
         ? "text-primary border-primary border-r"
         : "border-textGray"
