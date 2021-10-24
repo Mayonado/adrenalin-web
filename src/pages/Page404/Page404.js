@@ -10,7 +10,7 @@ const Page404 = ({ history }) => {
       <div className="w-48">
         <img src={page404} className="w-full h-auto" />
       </div>
-      <div className="text-xl my-4">Oops! Looks like you're lost.</div>
+      <div className="text-xl my-4">Oops! Seems like you're lost.</div>
       <button
         className="bg-primary px-24 py-2 text-white rounded-md"
         onClick={() => onClickGoHome()}

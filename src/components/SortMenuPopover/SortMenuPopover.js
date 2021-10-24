@@ -12,7 +12,7 @@ const SortMenuPopover = ({ sort, onChangeSortOrder }) => {
   return (
     <Menu as="div" className="relative inline-block text-left">
       <div className="hidden sm:block">
-        <Menu.Button className="flex flex-row items-center justify-center gap-4 border border-gray-300 px-8 py-3 text-primary rounded-lg">
+        <Menu.Button className="flex flex-row items-center justify-center gap-4 border border-gray-300 px-8 py-4 text-primary rounded-lg">
           Sort{" "}
           {(() => {
             switch (sort) {

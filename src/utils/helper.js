@@ -16,7 +16,7 @@ export const stringSanitizeNoLowerCase = (string) => {
 };
 
 /**
- * Helper to sort an array of object based on the given property
+ * Helper to sort an array of object based on the given property and sorting type
  * @param {dataArray} - array of object to be sorted
  * @param {property} - an object key in an objects
  * @param {type} - asc / desc
