@@ -28,7 +28,7 @@ const SortMenuPopover = ({ sort, onChangeSortOrder }) => {
         </Menu.Button>
       </div>
       <div className="sm:hidden">
-        <Menu.Button className="flex flex-row items-center justify-center gap-4 border border-gray-300 px-4 sm:px-8 py-3 text-primary rounded-lg">
+        <Menu.Button className="flex flex-row items-center justify-center gap-4 border border-gray-300 px-4 sm:px-8 py-4 text-primary rounded-lg">
           <SwitchVerticalIcon className="w-8" />
           <img src={arrowDown} alt="Arrow down" className="h-1.5" />
         </Menu.Button>
