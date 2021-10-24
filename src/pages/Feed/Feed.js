@@ -81,7 +81,7 @@ const Feed = () => {
       <div className="flex flex-col">
         <div className="flex flex-row w-full gap-12 sm:gap-16 py-4">
           <div className="w-5/6 sm:w-4/6">
-            <img src={searchIcon} className="absolute h-5 my-3.5 mx-4" />
+            <img src={searchIcon} className="absolute h-5 my-4.5 mx-4" />
             <input
               className="w-full border-gray-300 border py-4 px-12 rounded-md placeholder-black"
               placeholder="Search for mountains"
