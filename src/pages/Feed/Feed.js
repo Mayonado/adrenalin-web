@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Layout from "hoc/Layout/Layout";
 import searchIcon from "assets/svgs/search.svg";
 import mountainData from "feed/data.json";
@@ -83,7 +83,7 @@ const Feed = () => {
           <div className="w-5/6 sm:w-4/6">
             <img src={searchIcon} className="absolute h-5 my-3.5 mx-4" />
             <input
-              className="w-full border-gray-300 border py-3 px-12 rounded-md placeholder-black"
+              className="w-full border-gray-300 border py-4 px-12 rounded-md placeholder-black"
               placeholder="Search for mountains"
               maxLength="100"
               onChange={onChangeSearch}
