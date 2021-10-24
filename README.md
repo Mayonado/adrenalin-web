@@ -12,23 +12,6 @@ Adrenalin coding test built with ReactJS made by Lizandro Mayonado.
 - [npm](https://www.npmjs.com/get-npm)
 - [eslint](https://eslint.org/docs/user-guide/getting-started)
 
-### II. Local development environment
-
-- Visual Studio Code (with installed recommended extensions)
-
-Make sure to have these settings in your VSCode:
-
-```json
-{
-  "eslint.autoFixOnSave": true,
-  "editor.formatOnSave": true,
-  "editor.codeActionsOnSave": {
-    "source.organizeImports": true,
-    "source.fixAll": true
-  }
-}
-```
-
 ## Setup Procedure
 
 1. Clone and setup the repository
@@ -44,3 +27,8 @@ npm i
 ```bash
 npm start
 ```
+
+## Technologies
+
+- ReactJS
+- Tailwind CSS
