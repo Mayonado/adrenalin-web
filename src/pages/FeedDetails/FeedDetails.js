@@ -24,11 +24,10 @@ const bgImages = [
   italy,
 ];
 
-const FeedDetails = ({ location }) => {
+const FeedDetails = () => {
   const mountainId = useGetIntId();
   const mountainArr = mountainData.filter((mt) => mt.id === mountainId);
   const mountainIndex = mountainData.findIndex((mt) => mt.id === mountainId);
-  console.log(mountainIndex);
 
   if (mountainArr.length <= 0) {
     return (

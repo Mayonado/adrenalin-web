@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { classNames } from "utils";
 
-const Pagination = ({ activePage, onChangePage, totalRows }) => {
+const Pagination = ({ activePage, totalRows }) => {
   const pages = Math.ceil(totalRows / 10); //
   const pagesArray = Array.from(Array(pages).keys());
 
